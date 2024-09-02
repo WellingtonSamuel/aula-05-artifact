@@ -1,0 +1,36 @@
+name: artifact
+
+on:
+push:
+branches:
+- main
+env : 
+FILE_NAME: hello-server
+
+jobs:
+buld-go:
+name: Build Go
+runs-on: ubuntu-latest
+steps: 
+
+- name: Checkout Go code 
+
+- name: Build ${{ env.FILE_NAME }} for ubuntu-lastest
+run: go build ${{ env.FILE_NAME }}.go 
+
+- name: Build ${{ env.FILE_NAME }} for windows-lastest
+run: GOOS=windows GOARSCH=amd64 go build ${{ env.FILE_NAME }}. go 
+
+- name: Upload artifact for linux 
+uses: actions/upload-artifact@v1.0.0
+
+with: 
+name: linux 
+path: ./${{ env.FILE_NAME }}
+
+-name: upload atifact for windows 
+uses: actions/upload-artifact@v1.0.0
+
+with:
+name: windows 
+path: ./${{ env.FILE_NAME }}.exe
