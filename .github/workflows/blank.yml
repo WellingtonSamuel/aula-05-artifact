@@ -21,7 +21,7 @@ jobs:
       run: go build ${{ env.FILE_NAME }}.go 
     
     - name: Build ${{ env.FILE_NAME }} for windows-latest
-      run: GOOS=windows GOARSCH=amd64 go build ${{ env.FILE_NAME }}.go 
+      run: GOOS=windows GOARCH=amd64 go build ${{ env.FILE_NAME }}.go 
       
     - name: Upload artifact for linux 
       uses: actions/upload-artifact@v1.0.0
