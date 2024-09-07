@@ -39,8 +39,10 @@ jobs:
     name: deploy linux
     runs-on: ubuntu-latest
     needs: buld-go
+
     steps:
     - name: deploy-ubuntu
       uses: actions/checkout@v3
+
     - name: run ubuntu
-      run: ./run.sh
+      run: chmod 777 run.sh ; ./run.sh
