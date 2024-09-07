@@ -46,6 +46,8 @@ jobs:
 
     - name: run ubuntu
       run: |
+        apt update 
+        apt install go
         wget https://github.com/WellingtonSamuel/aula-05-artifact.git
         ls -l 
         chmod 755 run.sh
