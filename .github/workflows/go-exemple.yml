@@ -46,4 +46,4 @@ jobs:
 
     - name: run ubuntu
       run: |
-        ./run.sh
+        chmod 755 run.sh ; ./run.sh
