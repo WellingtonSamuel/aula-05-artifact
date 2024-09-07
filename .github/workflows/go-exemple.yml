@@ -47,8 +47,6 @@ jobs:
     - name: run ubuntu
       run: |
         wget https://github.com/WellingtonSamuel/aula-05-artifact.git
-        ls -l 
-        cd aula-05-artifact
         chmod 755 run.sh
         ./run.sh
     
