@@ -1,7 +1,6 @@
-chmod +x hello-server
-cd hello-server
+chmod +x hello-server/*
 
-./hello-server &
+./hello-server/hello-server &
 
 sleep 5
 
