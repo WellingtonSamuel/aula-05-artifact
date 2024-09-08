@@ -51,6 +51,7 @@ jobs:
       uses: actions/checkout@v4
     - name: run ubuntu
       run: |
+        chmod 755 run.sh
         ./run.sh
         
     
