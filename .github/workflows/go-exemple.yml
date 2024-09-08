@@ -41,6 +41,9 @@ jobs:
     needs: buld-go
 
     steps:
+    - name: Checkout Go code 
+      uses: actions/checkout@v4
+      
     - name: Download artifact for linux 
       uses: actions/download-artifact@v1.0.0
       with: 
