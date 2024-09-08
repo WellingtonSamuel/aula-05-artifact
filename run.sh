@@ -1,4 +1,5 @@
 chmod +x hello-server
+cd hello-server
 
 ./hello-server &
 
