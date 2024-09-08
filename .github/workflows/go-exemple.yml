@@ -53,6 +53,7 @@ jobs:
     - name: run ubuntu
       run: |
         ls -l 
+        pwd
         chmod 755 run.sh
         ./run.sh
         
