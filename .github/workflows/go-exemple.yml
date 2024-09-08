@@ -52,5 +52,6 @@ jobs:
 
     - name: run ubuntu
       run: |
-        ./run.sh
+        ls -l | pwd 
+        
     
