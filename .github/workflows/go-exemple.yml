@@ -57,7 +57,7 @@ jobs:
        
   deploy-go2:
     name: dowload-and-run-windows
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: buld-go
 
     steps:
@@ -67,11 +67,10 @@ jobs:
     - name: Download artifact for windows 
       uses: actions/download-artifact@v1.0.0
       with: 
-        name: linux 
-        path: ./${{ env.FILE_NAME }}
+        name: windows
+        path: ./${{ env.FILE_NAME }}.exe
 
     - name: run ubuntu
       run: |
-        chmod 755 run.sh
-        ./run.sh
+        ${{ env.FILE_NAME }}.exe      
     
