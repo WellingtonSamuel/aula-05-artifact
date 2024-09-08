@@ -49,6 +49,7 @@ jobs:
 
     - name: deploy-ubuntu
       uses: actions/checkout@v4
+      
     - name: run ubuntu
       run: |
         ls -l 
