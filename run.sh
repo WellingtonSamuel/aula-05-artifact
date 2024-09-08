@@ -1,6 +1,6 @@
-chmod +x ./hello-server
+chmod +x ./home/runner/work/aula-05-artifact/aula-05-artifact/hello-server
 
-./hello-server &
+/home/runner/work/aula-05-artifact/aula-05-artifact/hello-server &
 
 sleep 5
 
